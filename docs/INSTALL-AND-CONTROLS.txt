@@ -1,0 +1,51 @@
+NEON BOROUGH VR — Quest prototype v0.1.0
+
+An original, small GTA-inspired city courier game. It is not Rockstar's GTA.
+Designed for Meta Quest 2 / 3 / 3S with Touch controllers.
+
+INSTALL
+1. Enable Developer Mode for your Quest through Meta's developer setup.
+2. Connect your Quest to a computer with a USB data cable.
+3. In the headset, accept the USB debugging prompt.
+4. Use SideQuest's "Install APK" action and choose Neon-Borough-VR.apk.
+   If you already use Android platform tools, run:
+   adb install -r Neon-Borough-VR.apk
+5. Launch Neon Borough VR from your headset's Unknown Sources app list.
+
+PLAY
+A gold car is parked ahead. A cyan beacon marks the courier terminal nearby.
+Walk to the terminal and press A to collect a package. Police are alerted.
+Approach your gold car and press A to enter. Drive away from the police.
+Keep both police cars more than 38 metres away for 9 seconds to clear heat.
+Follow the cyan destination beacon and the HUD's direction and distance.
+Stop, press A to exit, then press A near the beacon to deliver your package.
+Return to the terminal for another contract. Cash and completed jobs save locally.
+
+TOUCH CONTROLLERS
+Left stick: walk in the direction you look; steer/throttle/reverse when driving.
+Right trigger: accelerate when driving.
+Right grip: brake.
+Right stick: 30-degree snap turns on foot.
+Right A or left X: collect, deliver, enter car, exit stopped car.
+Right B: return to the hub and cancel the active job; banked cash is preserved.
+
+Desktop fallback in the source project: WASD, mouse, E interact, Space brake,
+R return to hub, Escape release mouse.
+
+SCOPE AND TESTING
+This is a compact prototype: a procedural city, one usable gold car, traffic,
+two pursuing police cars, four rotating delivery locations, collision damage,
+HUD guidance, generated sound effects, and local progress saving.
+It does not include GTA's map, story, multiplayer, combat, or Rockstar assets.
+Mission logic and desktop OpenGL rendering were tested in the build environment.
+APK signature, ARM64 libraries, VR launch categories and OpenXR manifest were
+checked. Installation, tracking, controller input, sound, comfort and performance
+have not been tested on a physical Quest. Use current Quest system software.
+
+APK package: org.neonborough.vr
+Architecture: arm64-v8a; Android minimum API 29; target API 32.
+Signed with a local prototype certificate for sideloading; no store publication.
+No network account or game Internet connection is required.
+
+The engine is Godot 4.6.3 (MIT), with the Khronos OpenXR Android loader 1.1.54
+(Apache-2.0 OR MIT). Third-party license notices are embedded in the APK.

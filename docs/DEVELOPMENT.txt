@@ -1,0 +1,29 @@
+NEON BOROUGH VR — SOURCE PROJECT
+
+Open project.godot in Godot 4.6.3. Run the main scene for desktop testing.
+Desktop controls: WASD / mouse / E interact / Space brake / R return to hub.
+
+For a conventional Quest Android export from your own computer:
+- Set up Godot Android export dependencies and export templates.
+- Install the Godot OpenXR Vendors plugin compatible with Godot 4.6.
+- Enable the plugin and select Meta Quest in your Android export preset.
+- Use ARM64 only, OpenXR, a current supported Android SDK, and your own key.
+- Follow Godot's official OpenXR Android export documentation.
+
+The supplied APK was built using a custom Godot template with the Khronos
+OpenXR loader, Quest VR metadata, and a final manifest correction to preserve
+Android provider authorities and OpenXR runtime discovery. Standard Gradle
+exports with the official vendor plugin are recommended for future builds.
+The project uses Godot's default OpenXR controller action map.
+
+No third-party game assets, Rockstar content, or network services are used.
+The script creates meshes, materials, collisions, HUD and audio at runtime.
+
+Tests in game.gd can be run using:
+godot --headless --xr-mode off --path . --quit-after 400 -- --smoke-test
+This test briefly writes local game progress, then restores its starting cash
+and job count. Use a separate user-data directory for development tests.
+
+Known limits: small procedural city, simple police grid navigation, no combat,
+no multiplayer, no room-scale wall collision compensation, no headset-tested
+comfort/performance guarantees. Quest installation and tracking need a device.
