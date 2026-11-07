@@ -6,9 +6,9 @@ car, escape police, and complete delivery contracts to earn cash.
 
 ## Download the APK
 
-[Download Neon-Borough-VR.apk (about 26 MB)](https://github.com/markovandermerwe549-ops/vrgameingsss/releases/download/v0.1.0/Neon-Borough-VR.apk)
+[Download Neon-Borough-VR.apk (about 26 MB)](https://github.com/markovandermerwe549-ops/vrgameingsss/raw/refs/heads/main/downloads/Neon-Borough-VR.apk)
 
-[Release files, source ZIP and checksum](https://github.com/markovandermerwe549-ops/vrgameingsss/releases/tag/v0.1.0)
+[APK and checksum](downloads/) · [Download the source project](https://github.com/markovandermerwe549-ops/vrgameingsss/archive/refs/heads/main.zip)
 
 Sideload the APK using **SideQuest** with Quest Developer Mode enabled, then open
 **Neon Borough VR** from **Unknown Sources**. USB debugging must be approved inside
